@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fentanyl Loading Dose Calculator</title>
+    <link href="fentanylloadingdose.css" rel='stylesheet' type=text/css>
+</head>
+<body>
+<div class = "row">
+    <header> Fentanyl 50 μg/ml (0.05 mg/ml)</header> 
+  <div class = "leftside">   
+        <h1>Fentanyl Loading Dose</h1>
+        <h3 class='intro'> Dose range 2.5-10 μg/kg</h3>
+
+    <div class='container'>
+        <label for=weight>Animal's weight in kg</label>
+        <input type=number  id=weight required value='' placeholder=kg>
+        <br>
+        <label for=loadingDoseRate>Loading Dose Rate</label>   
+        <input type=number  id=loadingDoseRate required value='' placeholder=μg/kg>      
+     <br>
+    <button onclick=fentaprocess() id='submitbutton'>Calculate</button>
+   </div>
+       <div id=result2></div>
+       <script src=fentanylloadniv.js></script>
+ </div>
+        
+    <div class = "rightside">   
+        <h1>Fentanyl IV CRI Infusions</h1> 
+        <h3 class='intro'>2.5-10 μg/kg/hr intraoperative<br>1-5 μg/kg/hr postoperative</h3>
+        
+          
+                <div class="container2">
+                    <label for="plannedFluidRate">Planned Fluid Rate</label>
+                  <input type="text" class="form-control" id="plannedFluidRate" required value= "" placeholder="ml/kg/hr">
+                  <br>
+                    <label for="dose_rate">Drug Dose Rate</label>
+                    <input type="text" class="form-control" id="dose_rate" required value="" placeholder="μg/kg/hr">  
+                  <br>
+                    <label for="bagSize">Fluid Bag Size</label>
+                    <select id="bagSize">
+                        <option value="250">250 ml</option>
+                        <option value="500">500 ml</option>
+                        <option value="1000">1000 ml</option>
+                    </select>
+                </div>  
+                <br>       
+            <button type="button" class="btn-success" onclick=fentanylIVprocess() id="submitbutton">Calculate</button>   
+            <div id=result></div>   
+       <script src=fentanylloadniv.js></script>
+    </div>
+</div>
+</body>
+</html>
