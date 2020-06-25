@@ -13,10 +13,10 @@
         <h3 class='intro'> Dose range 2.5-10 μg/kg</h3>
 
     <div class='container'>
-        <label for=weight>Animal's weight in kg</label>
+        <label for=weight>Animal's weight (kg)</label>
         <input type=number  id=weight required value='' placeholder=kg>
         <br>
-        <label for=loadingDoseRate>Loading Dose Rate</label>   
+        <label for=loadingDoseRate>Loading Dose Rate (μg/kg)</label>   
         <input type=number  id=loadingDoseRate required value='' placeholder=μg/kg>      
      <br>
     <button onclick=fentaprocess() id='submitbutton'>Calculate</button>
@@ -26,18 +26,18 @@
  </div>
         
     <div class = "rightside">   
-        <h1>Fentanyl Fluid Bag CRI</h1> 
+        <h1>Fentanyl IV CRI Infusions</h1> 
         <h3 class='intro'>2.5-10 μg/kg/hr intraoperative<br>1-5 μg/kg/hr postoperative</h3>
         
           
                 <div class="container2">
-                    <label for="plannedFluidRate">Planned Fluid Rate</label>
+                    <label for="plannedFluidRate">Planned Fluid Rate (ml/kg/hr)</label>
                   <input type="text" class="form-control" id="plannedFluidRate" required value= "" placeholder="ml/kg/hr">
                   <br>
-                    <label for="dose_rate">Drug Dose Rate</label>
+                    <label for="dose_rate">Drug Dose Rate (μg/kg/hr)</label>
                     <input type="text" class="form-control" id="dose_rate" required value="" placeholder="μg/kg/hr">  
                   <br>
-                    <label for="bagSize">Fluid Bag Size</label>
+                    <label for="bagSize">Fluid Bag Size (ml)</label>
                     <select id="bagSize">
                         <option value="250">250 ml</option>
                         <option value="500">500 ml</option>
