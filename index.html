@@ -14,10 +14,10 @@
 
     <div class='container'>
         <label for=weight>Animal weight (kg)</label>
-        <input type=number  id=weight required value='' placeholder=kg>
+        <input type=number  id=weight step="0.01" min="0.01" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 46 && charCode > 31 && event.charCode >= 48 && event.charCode <= 57"  required value='' placeholder=kg>
         <br>
         <label for=loadingDoseRate>Loading Dose Rate (μg/kg)</label>
-        <input type=number  id=loadingDoseRate required value='' placeholder=μg/kg>
+        <input type=number  id=loadingDoseRate step="0.01" min="0.01" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 46 && charCode > 31 && event.charCode >= 48 && event.charCode <= 57" required value='' placeholder=μg/kg>
      <br>
      <span>
     <button onclick=fentaprocess() id='submitbutton'>Calculate</button>
@@ -34,10 +34,10 @@
         <h3 class='intro'>Dogs and Cats <br>Intraoperative 2.5-10 μg/kg/hr<br>Postoperative 1-5 μg/kg/hr </h3> 
                 <div class="container2">
                     <label for="plannedFluidRate">Planned Fluid Rate (ml/kg/hr)</label>
-                  <input type="text" class="form-control" id="plannedFluidRate" required value= "" placeholder="ml/kg/hr">
+                  <input type="number" class="form-control" step="0.01" min="0.01" id="plannedFluidRate" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 46 && charCode > 31 && event.charCode >= 48 && event.charCode <= 57" required value= "" placeholder="ml/kg/hr">
                   <br>
                     <label for="dose_rate">Drug Dose Rate (μg/kg/hr)</label>
-                    <input type="text" class="form-control" id="dose_rate" required value="" placeholder="μg/kg/hr">  
+                    <input type="number" class="form-control" step="0.01" min="0.01" id="dose_rate"onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 46 && charCode > 31 && event.charCode >= 48 && event.charCode <= 57"  required value="" placeholder="μg/kg/hr">  
                   <br>
                     <label for="bagSize">Fluid Bag Size (ml)</label>
                     <select id="bagSize">
